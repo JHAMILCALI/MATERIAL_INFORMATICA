@@ -1,0 +1,64 @@
+﻿<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8"> <!--<meta charset="iso-8859-1"> -->
+<meta name="viewport" content="width=device-width; initial-scale=1.0">
+<head><title>Ejemplo19-Array</title>
+<link rel="stylesheet" href="bootstrap-4.1.0-dist/css/bootstrap.min.css" >
+<script src="bootstrap-4.1.0-dist/js/bootstrap.min.js"></script>
+<script>
+function cargar(){
+	for (i=1;i<=n;i++){ 
+    	vec[i]=parseInt(prompt("dato: " + i));
+	} 
+}
+
+function mostrar(){
+	for (i=1;i<=n;i++){ 
+    	document.write("<button type='button' class='btn btn-primary btn-xs'>"+vec[i]+"</button>");
+	} 
+}//fin de mostrar
+
+function ordenar(){
+for (i=1;i<n;i++){  
+	for (j=i+1;j<=n;j++){  
+		if(vec[i]>=vec[j]){
+			aux=vec[i];
+			vec[i]=vec[j];
+			vec[j]=aux;
+		}
+	}
+}
+}//fin de ordenar
+</script>
+<style>
+body{
+background-color:#000000;
+}
+#blanco{
+color:#FFFFFF;
+}
+</style>
+<body>
+
+<script>
+	var vec = new Array();
+	var i,j,aux,n; 
+	n=parseInt(prompt("Tamaño del vector: "));
+	cargar();
+	document.write("<MARQUEE SCROLLAMOUNT=17><h3 id='blanco'> Elementos del Array</h3></MARQUEE>");
+	mostrar();
+	document.write("<MARQUEE DIRECTION=RIGHT SCROLLAMOUNT=18><h3 id='blanco'> Array ordenado</h3></MARQUEE>");
+	ordenar();
+	mostrar();
+</script>
+</body>
+</html>
+
+
+
+
+
+
+
+

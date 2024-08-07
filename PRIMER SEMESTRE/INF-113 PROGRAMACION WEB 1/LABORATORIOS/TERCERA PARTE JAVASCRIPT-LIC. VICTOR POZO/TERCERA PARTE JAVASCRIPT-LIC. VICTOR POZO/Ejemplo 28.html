@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="es">
+<head><title>Ejemplo 28 - JavaScript</title>
+<meta charset="UTF-8"> <!--<meta charset="iso-8859-1"> -->
+<meta name="viewport" content="width=device-width; initial-scale=1.0">
+<link rel="stylesheet" href="bootstrap/css/bootstrap.min.css" >
+<script src="bootstrap/js/bootstrap.min.js"></script>
+<script>
+
+  function confirmarReset(){
+     return confirm("¿ Deseas Limpiar el formulario... ?");
+  } 
+
+  function confirmarSubmit(){
+     return confirm("¿ Deseas enviar el formulario... ?");
+  } 
+
+  function aMayusculas(campo){
+     campo.value=campo.value.toUpperCase();
+  }
+
+   function compruebaCodigo(campo){ 
+     //isNaN; Devuelve un boleano dependiendo de lo que recibe por parámetro. Si no es un número devuelve un true, si es un numero devuelve false.
+     if (isNaN(campo.value)||(campo.value.length<5)){
+        alert("Debe introducir un código numérico mayor o igual a 5 cifras");     
+        campo.focus();
+        campo.select();
+
+     }
+  }
+</script>
+</head>
+<body>
+
+<div class="alert alert-success text-center"><span class="badge">78</span>REGISTRO EN EL SITIO SOFTWARE LIBRE</div>
+<div class="container well">
+<form name="miFormulario" onSubmit="return confirmarSubmit()" onReset="return confirmarReset()">
+
+  <div class="row">     
+   <label class="control-label col-xs-3"><span class="glyphicon glyphicon-user"></span> nombres:</label>        
+     <div class="col-xs-9">      
+   	<INPUT TYPE="TEXT"  class="form-control" placeholder="nombres" onChange="aMayusculas(this)">         
+ </div>    
+</div>
+<div class="row">       
+   <label class="control-label col-xs-3">apellidos:</label>        
+   <div class="col-xs-9">            
+   	<input type="text" class="form-control" placeholder="apellidos" onChange="aMayusculas(this)">        
+   </div>    
+</div>                 
+
+<div class="row">       
+   <label class="control-label col-xs-3 text-success">Ciudad de residencia</label>        
+   <div class="col-xs-9">              
+   		<select class="form-control input-sm">                
+       		<option>La Paz</option>    
+            <option>Cochabamba</option>
+            <option>Oruro</option>
+            <option>Potosi</option>
+            <option>Tarija</option>
+            <option>Beni</option>     
+            <option>Chuquisaca</option>   
+            <option>Santa Cruz</option>
+            <option>Pando</option>
+       </select>     
+   </div>    
+</div>
+
+<div class="row">       
+   <label class="control-label col-xs-3">codigo</label>        
+   <div class="col-xs-9">            
+   	<input type="text" class="form-control" placeholder="codigo" name="codigo"  
+     onblur="compruebaCodigo(this)">        
+   </div>    
+</div>
+</div>
+<div class="container well">
+<div class="form-group">   
+     <div class="col-xs-6">         
+        <input type="submit" class="btn btn-primary btn-lg btn-block" value="enviar">   
+      </div>   
+     <div class="col-xs-6">      
+       	<input type="reset" class="btn btn-danger btn-lg btn-block" value="limpiar">        
+     </div> 
+</div>
+
+</form>
+</div>
+</body>
+</html>

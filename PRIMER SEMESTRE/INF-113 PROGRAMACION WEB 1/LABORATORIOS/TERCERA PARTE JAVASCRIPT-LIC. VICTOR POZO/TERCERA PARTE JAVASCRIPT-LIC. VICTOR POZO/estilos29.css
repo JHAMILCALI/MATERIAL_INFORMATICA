@@ -1,0 +1,26 @@
+body{	
+	background: url("fondo.jpg") no-repeat;
+	background-size: cover;
+    min-height: 100%; 
+}
+
+#formulario{	
+	margin:10px 100px 100px -290px;
+}
+h2{
+	text-align:center;
+}
+
+#formulario .registro{
+	float:right;
+	height:auto;
+    width: 40%;
+    padding: 0 35px;     	
+	border-radius: 7px;
+	background-color:#FFFFFF;	
+}
+
+#formulario .btn{
+	width: 100%;
+	margin-top: 20px;
+}

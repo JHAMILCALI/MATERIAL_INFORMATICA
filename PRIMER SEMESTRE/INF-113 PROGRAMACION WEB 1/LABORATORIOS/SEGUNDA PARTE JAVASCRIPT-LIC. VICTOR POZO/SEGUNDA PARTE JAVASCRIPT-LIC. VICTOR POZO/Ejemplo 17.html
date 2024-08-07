@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8"> <!--<meta charset="iso-8859-1"> -->
+<head><title>Ejemplo17-Retorno</title>
+<style>
+.format{
+text-align:center;
+font-family:Arial;
+color:#999;  
+}
+</style>	
+<script> 
+function promedio(valor1,valor2){ 
+    var resultado; 
+    resultado = valor1/valor2; 
+    return resultado;
+} 
+</script>
+</head>
+<body>
+<script> 
+	var x,i=0, suma=0;
+	n=parseInt(prompt("Entrada de datos: ","6"));
+	while(i<n){
+		dato=parseInt(prompt("Valor: " + i ,""));
+		suma+=dato;
+	i++;
+	}
+	x = promedio(suma,i); 
+	document.write ("<H1 class='format'>La media es: " + x + "</H1>"); 
+	document.write ("<H1 class='format'>FIN DEL PROGRAMA!!!</H1>"); 
+</script>
+</body>
+</html>
+
+
+
+
+
+
+
+

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="es">
+<head><title>Objeto Select</title>
+<meta charset="UTF-8"> <!--<meta charset="iso-8859-1"> -->
+<meta name="viewport" content="width=device-width; initial-scale=1.0">
+<link rel="stylesheet" href="bootstrap/css/bootstrap.min.css" >
+<script src="bootstrap/js/bootstrap.min.js"></script>
+<style>
+body{
+	text-align:center;
+}
+</style>
+<SCRIPT>
+  function informar(){
+     var mensaje="";
+     mensaje+="Se ha seleccionado un procesador ";      
+     mensaje+=document.miFormulario.procesador.options[document.miFormulario.procesador.selectedIndex].value;
+     mensaje+="\n con sistema operativo ";
+     mensaje+=document.miFormulario.soperativo.options[document.miFormulario.soperativo.selectedIndex].value;
+     alert(mensaje);
+  }
+</SCRIPT>
+</HEAD>
+<BODY>
+<H3>Manejando el objeto select</H3>
+<FORM NAME="miFormulario" ACTION="javascript: informar()">
+<H2>Venta de COMPUTADORAS</H2>
+<BR><BR>
+ <div class="container well">
+<div class="row">      
+  <h3><label class="control-label col-xs-4 label label-danger" >Procesador</label></h3> 
+   <div class="col-xs-8">            
+    <select class="form-control"  id="procesador">                
+     	<OPTION VALUE="Celeron-3.50" SELECTED>Celeron 3.50 Ghz</OPTION> 
+		<OPTION VALUE="PIV-3.45">Pentium IV 3.45 Ghz</OPTION> 
+		<OPTION VALUE="PD-3.09">Pentium D 3.09 Ghz</OPTION>             
+    </select>          
+   </div>   
+</div> 
+
+
+<div class="row">            
+  <h3><label class="control-label col-xs-4 label label-danger" >Sistema Operativo</label></h3> 
+   <div class="col-xs-8">  
+ <select class="form-control"  id="soperativo"  MULTIPLE>
+<OPTION VALUE="Windows 10" SELECTED>Windows 10</OPTION> 
+<OPTION VALUE="Windows Server 2017">Windows Server 2017</OPTION> 
+<OPTION VALUE="Windows 7">Windows 7</OPTION> 
+</SELECT>
+  </div>   
+</div> 
+<div class="row">     
+<div class="col-xs-12">  
+<INPUT TYPE=SUBMIT  class="btn btn-info" NAME="botonEnviar" VALUE="Enviar">
+<INPUT TYPE=RESET  class="btn btn-info" NAME="botonLimpiar" VALUE="Limpiar">
+</div>
+</div>
+</div>
+</FORM>
+</BODY>
+</HTML>
+
+
+
+
+
+
+
+
+

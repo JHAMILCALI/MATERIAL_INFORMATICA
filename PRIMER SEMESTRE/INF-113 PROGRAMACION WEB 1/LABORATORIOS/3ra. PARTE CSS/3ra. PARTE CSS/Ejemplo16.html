@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8"><!--<meta charset="iso-8859-1"> -->
+<title>Ejemplo 16</title>
+<style>
+body {
+  margin: 0;
+}
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  width: 25%;/*Los elementos de bloque ocupan  un ancho de 25%*/
+  background-color: #f1f1f1;
+  position: fixed;
+  height: 100%;
+  overflow: auto;
+}
+li a {
+  display: block;/* Muestra los enlaces como elementos de bloque hace que se pueda hacer clic en toda el área del enlace (no solo en el texto)*/
+  color: #000;
+  padding: 8px 16px;
+  text-decoration: none;
+  font-family: Georgia;
+}
+li a.activo {
+  background-color: #04AA6D;
+  color: white;
+}
+li a:hover:not(.active) {
+  background-color: #555;
+  color: white;
+}
+p{
+  font-family: Arial;
+  text-align: justify;
+  font-size: 20px;
+}
+</style>
+</head>
+<body>
+<ul>
+  <li><a class="activo" href="#">Facultad de Cs. Puras y Naturales</a></li>
+  <li><a href="#">Informatica</a></li>
+  <li><a href="#">Matematicas</a></li>
+  <li><a href="#">Quimica</a></li>
+  <li><a href="#">Biologia</a></li>
+  <li><a href="#">Fisica</a></li>
+</ul>
+
+<div style="margin-left:25%;padding:1px 16px;height:1000px;">
+  <h1>Navegador lateral fijo de altura completa</h1>
+  <h2>Intente desplazarse por esta área y vea cómo la navegación lateral se adhiere a la página.</h2>
+  <p>Tenga en cuenta que este elemento div tiene un margen izquierdo del 25%. Esto se debe a que la navegación lateral está configurada en un 25 % de ancho. Si elimina el margen, el sidenav se superpondrá/se asentará encima de este div.</p>
+  <p>También tenga en cuenta que hemos configurado overflow:auto en sidenav. Esto agregará una barra de desplazamiento cuando la navegación lateral sea demasiado larga (por ejemplo, si tiene más de 50 enlaces dentro).</p>
+  <p>La propiedad  overflow de CSS controla lo que sucede con el contenido que es demasiado grande para caber en un área.</p>
+  <p>Un elemento con position: fixed;se coloca en relación con la ventana gráfica, lo que significa que siempre permanece en el mismo lugar, incluso si se desplaza la página</p>
+  <p>La propiedad display especifica el comportamiento de visualización (el tipo de cuadro de representación) de un elemento.</p>
+  <p>not; El selector coincide con todos los elementos que NO son el elemento/selector</p>
+</div>
+</body>
+</html>

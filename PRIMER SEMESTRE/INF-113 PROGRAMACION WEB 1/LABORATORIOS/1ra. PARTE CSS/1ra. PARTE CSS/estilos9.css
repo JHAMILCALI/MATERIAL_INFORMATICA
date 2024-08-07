@@ -1,0 +1,29 @@
+@charset "utf-8";
+/* CSS Document */
+
+p {
+ font-size : 12pt;
+ font-family : arial,helvetica;
+ font-weight : normal;
+}
+h1 {
+ font-size : 36pt;
+ font-family : verdana,arial;
+ text-decoration: blink;
+ text-align : center;
+ background-color :#666;
+}
+td {
+ font-size : 10pt;
+ font-family : Comic Sans MS;
+ text-align : center;
+ background-color :#666;
+}
+th{
+	background-color:#000;
+}
+body  {
+ background-color :#999;
+ font-family : arial;
+ color: white;
+} 

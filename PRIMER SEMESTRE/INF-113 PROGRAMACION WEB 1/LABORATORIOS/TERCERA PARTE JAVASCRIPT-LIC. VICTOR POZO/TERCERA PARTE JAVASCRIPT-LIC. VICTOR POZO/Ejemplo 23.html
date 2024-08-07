@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8"> <!--<meta charset="iso-8859-1"> -->
+<meta name="viewport" content="width=device-width; initial-scale=1.0">
+<head><title>Ejemplo23-Eventos</title>
+<link rel="stylesheet" href="bootstrap/css/bootstrap.min.css" >
+<script src="bootstrap/js/bootstrap.min.js"></script>
+<style>
+body{
+	background-color:#09C;
+}
+</style>
+</HEAD>
+
+<BODY onload="alert('onload')" onUnload="alert('onunload')">
+<h1><span class="label label-danger">Eventos asociados a JavaScript</span></h1>
+<div class="col-xs-5">  
+	<FORM onReset="alert('Formulario CANCELADO...')" onSubmit="alert('Formulario listo para ENVIARSE...')">
+	<button type="button" class="btn btn-info" onClick="alert('Evento onclick')">Prueba el evento onclick</button><BR>
+	<button type="button" class="btn btn-danger" onDblClick="alert('Evento ondblclick')">Prueba el evento ondblclick</button><BR>
+	<button type="button" class="btn btn-primary" onMouseOver="alert('Evento onmouseover')">Prueba el evento onmouseover</button><BR>
+	<button type="button" class="btn btn-warning" onMouseMove="alert('Evento onmousemove')">Prueba el evento onmousemove</button><BR>
+  	<button type="button" class="btn btn-info" onmouseout= "alert('Evento onmouseout')">Prueba el evento onmouseout</button><BR>                  
+	<input type="text" class="form-control" placeholder="onblur" onblur= "alert('Evento onblur')">            
+    <button type="button" class="btn btn-info" onkeyPress= "alert('Evento onkeypress')">Prueba el evento onkeypress</button><BR>    	
+  	<input type="text" class="form-control" placeholder="onchange" onchange= "alert('Evento onchange')"><BR> 
+		
+		<input type="submit" class="btn btn-primary"  value="Enviar">           
+       	<input type="reset" class="btn btn-danger" value="Limpiar">   
+</FORM>
+</div> 
+</BODY>
+</HTML>
+
+
+
+
+
+
+
+
+
+

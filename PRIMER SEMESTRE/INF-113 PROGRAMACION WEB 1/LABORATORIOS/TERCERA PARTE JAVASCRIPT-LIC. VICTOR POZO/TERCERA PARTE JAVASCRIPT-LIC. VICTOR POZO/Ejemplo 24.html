@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8"> <!--<meta charset="iso-8859-1"> -->
+<meta name="viewport" content="width=device-width; initial-scale=1.0">
+<title>Ejemplo 24-Imagenes</title>
+<link rel="stylesheet" href="bootstrap/css/bootstrap.min.css" >
+<script src="bootstrap/js/bootstrap.min.js"></script>
+<style>
+body{
+	text-align:center;
+	background-color:#0CF;
+	}
+</style>
+<script>
+function CambiarImage(nombre){
+	var imagen = new Image();
+	imagen.src = "imagenes/imagen3.jpg";
+	document[nombre].src=imagen.src;	
+}
+</script>
+</head>
+<body>
+<div class="row">
+	<div class="col-xs-6 col-xs-offset-3">
+	<img src="imagenes/imagen1.jpg" id="uno" name="uno"  width="400px" height="400px"/>		
+</div>
+<form>
+<h1><span class="label label-success">Cambiar imagen</span></h1>
+<button type="button" class="btn btn-danger" onClick="CambiarImage('uno')">Clic aqui</button>
+</form>
+</body>
+</html>

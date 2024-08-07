@@ -1,0 +1,85 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8"><!--<meta charset="iso-8859-1"> -->
+<title>Ejemplo 15</title>
+<style>
+body{
+	background-image:url(fondos/fondo06.gif); 
+	}
+	
+#menu_principal{
+height: 275px; 
+width: 180px; 
+left: 10px;
+top: 2px; 
+position:relative; 		/*En función a los atributos height y width*/
+visibility:visible;
+font-family:Arial;
+background-color:#5FA4E9;
+border: 3px solid #09F;
+border-radius: 7px;
+}
+
+li{							/*selectores de etiqueta*/
+	font-size:7px;	  
+	background-color:#1878AB;
+	text-align:left;	
+	border-bottom-style:dotted;	
+	border-bottom-width:thin;
+	border-bottom-color:#FFFF00;	
+	line-height:17px;/*Tamaño del elemento li en vertical, es decir, su altura.*/				
+	padding-left:20px;/*Espaciado entre el texto y el elemento contenedor*/
+}
+
+li.clase1{	
+	color:#FFFFFF;
+	background-color:#09F;	
+	font-family:"Verdana";
+	text-align:center;
+	font-size:7pt;
+	font-weight:bold;
+}
+a:link{
+	color:#FFFFFF;
+	text-decoration:none;
+}
+a:hover{
+	font-weight:bold;	
+}	
+
+ul{
+	 padding-left:3px;	/*Espacio insertado, por la izquierda, entre el borde del elemento continente(capa) y el contenido de este(ul) li's*/
+}
+
+a.cont:hover{
+	color:#F00;
+	font-weight:bold;
+	text-decoration:underline;
+	
+	}
+</style>
+</head>
+<body>
+<div id="menu_principal">
+<ul type="none">
+	<li class="clase1">EMPRESARIOS ASOCIADOS</li>
+	<li class="clase1">LISTADO DE RUBROS</li>
+	<li><p></p><a href="http://">Servicios</a></li>
+	<li><a href="http://">Shopping</a></li>
+	<li><a href="http://">Marketing</a></li>  
+	<li><a href="http://">Download</a></li>
+	<li><a href="http://">Eventos</a></li>
+	<li><a href="http://">Noticias</a></li>
+	<li><a href="http://">Infolegal</a></li>
+	<li><a href="http://">Clima</a></li>
+	<li><a href="http://">Frases de negocios</a></li>
+	<li><a href="http://">Glosario</a></li>
+	<li><a href="http://">Opiniones/Sugerencias</a></li>
+	<li><a href="http://" class="cont">Contactos</a></li>		
+</ul>
+</div>
+</body>
+</html>
+

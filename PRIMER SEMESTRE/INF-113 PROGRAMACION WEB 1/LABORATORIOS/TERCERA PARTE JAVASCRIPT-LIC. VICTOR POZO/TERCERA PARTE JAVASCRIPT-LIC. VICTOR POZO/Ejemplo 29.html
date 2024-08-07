@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="UTF-8"> <!--<meta charset="iso-8859-1"> -->
+    <title>Ejemplo 29-Por acceso directo</title>
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+	<script src="bootstrap/js/bootstrap.min.js"></script>
+	<script src="js/app.js"></script>
+    <link rel="stylesheet" type="text/css" href="estilos29.css">
+<script>
+function validacion(){
+var enviar = true;
+if(document.getElementById('nombre').value.length < 3 ){
+    enviar = false;
+	alert('El nombre tiene que tener una longitud mayor a 2 caracteres');
+}
+
+if(document.getElementById('direccion').value.length < 7 ){
+    enviar = false;
+	alert('La Direccion tiene que tener una longitud mayor a 6 caracteres');
+}
+
+if(isNaN(document.getElementById('edad').value)){
+    enviar = false;
+	alert('La edad tiene que ser un valor numerico');
+}
+
+if(document.getElementById('estudios').value == ''){
+    enviar = false;
+	alert('No tiene que ser un campo vacio');
+}
+
+if(!document.getElementById('acepto').checked){
+    enviar = false;
+}
+
+if(!enviar){
+	return enviar;
+}
+}
+</script>
+</head>
+
+<body>
+    <div class="container" id="formulario">      
+        <div class="registro">
+            <h2>Registro del usuario</h2>
+            <form name="form1" class="form-horizontal" onsubmit='return validacion();'>
+        
+		<div class="form-group">
+            <label for="validarNombre">Nombre:<span>*</span></label>
+            <input type="text" class="form-control" id="nombre" name="nombre" placeholder="Nombre completo" required>
+        </div>
+  	
+	 	<div class="form-group">
+            <label for="validarDireccion">Direccion:<span>*</span></label>
+            <input type="text" class="form-control" id="direccion" name="direccion" placeholder="Direccion de casa" required>       
+    	</div>
+	
+       <div class="form-group">
+            <label for="validarEdad">Edad:<span>*</span></label>
+            <input type="text" class="form-control" id="edad" name="edad" placeholder="Edad" required>
+       </div>
+   
+	   <div class="form-group">
+            <label for="validarEmail">Email:<span>*</span></label>
+            <input type="email" class="form-control" id="email" name="email" placeholder="Correo electronico" required>
+        </div>
+   
+		<div class="form-group">
+            <label for="validarTema">Estudios:<span>*</span></label>
+            <select  class="form-control" id="estudios" name="estudios" required>
+                <option selected disabled value="">Selecciona...</option>
+                <option value="Sin estudios">Ninguno</option>
+                <option value="Nivel basico">Primaria</option>
+                <option value="Nivel medio">Secundaria</option>	
+				<option>Licenciatura</option>			
+                <option>M.Sc</option>
+				<option>Ph.D</option>
+            </select>
+        </div>
+   
+		<div class="form-check">
+  <input class="form-check-input" type="checkbox" value="" id="acepto" name="acepto">
+  <label class="form-check-label">Acepto las condicones del registro
+  </label>
+		</div>
+		<div class="form-group">
+        <button class="btn btn-primary" type="submit" name="submit">Registro</button>
+        <button class="btn btn-success" type="reset" name="reset">Cancelar</button>
+    	</div>
+</form>
+</div>
+</div>	
+</body>
+</html>

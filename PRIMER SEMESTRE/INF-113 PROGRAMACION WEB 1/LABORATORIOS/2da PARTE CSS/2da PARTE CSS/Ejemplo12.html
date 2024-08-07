@@ -1,0 +1,83 @@
+
+<!DOCTYPE html>
+<html lang="es"><head>
+<meta charset="UTF-8"> <!--<meta charset="iso-8859-1"> -->
+<title>Ejemplo 12</title>
+<style>
+h3  p{
+	color:#00FFFF; 
+	font-size:16px; 
+	font-family:Arial;
+	text-align:center;	
+}
+div  table  tr  td{
+	font-family: Verdana, Geneva, sans-serif;
+	border-color:#000000;
+	border-style:groove;
+	background-color:#999999;
+}
+.titulo{
+	color:#993300; 
+	font-size:18px; 
+	font-family:Helvetica;	
+}
+
+h2,h3{
+	color:#FFF;
+	text-shadow:#666;
+	box-shadow: 10px 4px 5px #666;
+	border-style:groove;
+	background-color:#999;
+}
+
+h2:hover{
+	
+	transform:scale(3.1);
+	}
+p{
+	text-align:justify;	
+}
+body{
+	text-align:center;
+	background-image:url(fondo22.gif);
+	}
+	
+h2>p{
+	color:#FF0000;
+	text-align:center;
+}
+</style>
+</head>
+<body>
+
+<h1 style="font-family:fantasy; font-size:20px; font-weight:bold;">UTILIZANDO SELECTORES HIJO DIRECTO Y DESCENDENTE</h1>
+<h2><p>ENLACES O HIPERVINCULOS</p></h2>
+<h3>ENLACE A PARTE DE UN DOCUMENTO
+<a href="#internet"><p>Que es CSS?</p></a>
+<a href="#correo">Filosofia de CSS</a>
+</h3>
+
+<h3 class="titulo">ENLACE A OTRA PAGINA NUESTRA</h3>
+<a href="primero.html">Enlace a la página ejemplo2.html</a><br>
+<a href="segundo.html">Enlace a la página ejemplo3.html</a><br><br>
+<h4 class="titulo">ENLACES EXTERNOS</h4>
+
+<div>
+<table border=1 align="center">
+<tr><td><a href="http://www.google.com">Página de Google</a></td></tr>
+<tr><td><a href="ftp://ftp.microsoft.com/pub/">FTP de Microsoft</a></td></tr>
+<tr><td><a href="mailto:pdvp.com@gmail.com">Dirección de correo E-Mail</a></td></tr>
+</table>
+</div>
+<br><br>
+
+
+<h3><a name="internet">Que es CSS</a></h3>
+<p>CSS es un lenguaje utilizado en la presentación de documentos HTML. Un documento HTML viene siendo coloquialmente "una página web". Así, podemos decir que el lenguaje CSS sirve para dotar de presentación y aspecto, de "estilo", a una página web. Este lenguaje es principalmente utilizado por parte de diseñadores y programadores web para elegir multitud de opciones de presentación como colores, tipos y tamaños de letra, imágenes de fondo, bordes, etc.</p>
+
+<h3><a name="correo">Filosofia de CSS</a></h3>
+<p>La filosofía de CSS se basa en intentar separar lo que es la estructura o contenido y configuración básica del documento HTML de su presentación. Por decirlo de alguna manera: la página web sería lo que hay debajo (el contenido) y CSS sería "un cristal de color" que hace que el contenido se vea de una forma u
+otra. Usando esta filosofía, resulta muy fácil cambiarle el aspecto a una páginaweb: basta con cambiar "el cristal" que tiene delante. Piensa por ejemplo qué ocurre si tienes un libro de papel y lo miras a través de un cristal de color azul: que ves el libro azul. En cambio, si lo miras a través de un cristal
+amarillo, verás el libro amarillo. El libro (el contenido) es el mismo, pero lo puedes ver de distintas maneras. CSS permite cambiar el estilo a los contenidos de las páginas web.</p>
+</body>
+</html>

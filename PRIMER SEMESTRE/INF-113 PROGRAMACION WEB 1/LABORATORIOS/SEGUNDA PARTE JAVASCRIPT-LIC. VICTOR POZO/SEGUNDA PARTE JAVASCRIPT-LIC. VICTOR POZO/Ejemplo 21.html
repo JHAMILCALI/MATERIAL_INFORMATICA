@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8"> <!--<meta charset="iso-8859-1"> -->
+<head><title>Ejemplo21-JavaScript</title>
+<style>
+p{
+color:#FFF;
+font-family:Arial;
+font-size:36px;
+}
+body{
+	background-color:#009;
+	text-align:center;
+}
+</style>
+</head>
+<body>
+<script>
+        var cont = 0, i;
+        var cad = "";
+        cad = prompt("Introduzca la cadena:");
+        for (i = 0 ; i < cad.length ; i++)
+        {
+if(cad.charAt(i)=='a'||cad.charAt(i)=='e'||cad.charAt(i)=='i'||cad.charAt(i)=='o'||cad.charAt(i)=='u')
+            cont = cont + 1;
+        }
+       	 document.write ("<p>La cadena '" + cad + "' tiene " + cont + " vocales</p>");
+	document.write("<br>");
+       	 document.write("<p>HECHO!!!</p>");
+
+</script>
+
+</body>
+</html>
+
+
+
+
+
+
+
+

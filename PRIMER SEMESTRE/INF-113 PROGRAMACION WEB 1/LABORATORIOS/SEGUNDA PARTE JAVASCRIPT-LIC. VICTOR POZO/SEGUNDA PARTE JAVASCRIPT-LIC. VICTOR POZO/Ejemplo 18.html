@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8"> <!--<meta charset="iso-8859-1"> -->
+<meta name="viewport" content="width=device-width; initial-scale=1.0"> 
+<head><title>Ejemplo18-Array</title>
+<link rel="stylesheet" href="bootstrap-4.1.0-dist/css/bootstrap.min.css" >
+<script src="bootstrap-4.1.0-dist/js/bootstrap.min.js"></script>
+<script> 
+function cargar(){   
+	n=parseInt(prompt("Tamaño del vector: "));
+	for(i=1;i<=n;i++){ 
+    	vec[i]=i*2;
+	} 
+} 
+
+function mostrar(){
+for(i=1;i<=n;i++){  
+	document.write("<button type='button' class='btn btn-primary btn-sm'>"+vec[i]+"</button>");	
+}
+}
+</script>
+
+<style>
+body{
+background-color:#000000;
+}
+#blanco{
+color:#FFFFFF;
+}
+</style>
+</head>
+<body>
+<MARQUEE BEHAVIOR=ALTERNATE><h3 id="blanco">Manejo de Array con JavaScript </h3></MARQUEE>
+<script>
+ var vec = new Array(); 
+ cargar();
+ mostrar();
+</script>
+</body>
+</html>
+
+
+
+
+
+
+
+

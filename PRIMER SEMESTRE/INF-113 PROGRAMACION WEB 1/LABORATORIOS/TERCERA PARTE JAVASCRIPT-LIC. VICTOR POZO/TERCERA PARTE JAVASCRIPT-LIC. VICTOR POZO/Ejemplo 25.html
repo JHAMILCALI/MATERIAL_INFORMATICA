@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="es">
+<head><title>Ejemplo25-JavaScript</title>
+<meta charset="UTF-8"> <!--<meta charset="iso-8859-1"> -->
+<meta name="viewport" content="width=device-width; initial-scale=1.0">
+<link rel="stylesheet" href="bootstrap/css/bootstrap.min.css" >
+<script src="bootstrap/js/bootstrap.min.js"></script>
+<style>
+body{
+	text-align:center;
+}
+</style>
+<script>
+	//Encontrar elementos HTML por colecciones de objetos HTML	
+  function informar(){
+     var mensaje="";  
+     mensaje+="Se han seleccionado las opciones: \n\n";  
+     for(i=0; i<5; i++){   
+        if (miFormulario.elements[i].checked){
+          mensaje+="- " + miFormulario.elements[i].value + "\n";
+        }
+     }
+     alert(mensaje);
+  }
+
+</SCRIPT>
+</HEAD>
+<BODY>
+
+<H2>Manejando el objeto checkbox...</H2>
+<H2>LENGUAJES DE PROGRAMACION</H2>
+<div class="container well">
+<FORM NAME="miFormulario" ACTION="javascript:informar()">
+Selecciona los cursos APROBADOS<BR><BR>
+<input type="checkbox"  NAME=""  VALUE="Java" checked>
+<label >Java</label></br>
+<input type="checkbox" NAME=""   VALUE="Python">
+<label>Python </label> </br>
+<input type="checkbox" NAME=""   VALUE="C#">
+<label>C#</label> </br>
+<input type="checkbox" NAME="" VALUE="PHP">
+<label>PHP</label> </br>
+<input type="checkbox" NAME="" VALUE=".NET">
+<label>.NET</label> </br></br>
+<INPUT TYPE=SUBMIT  class="btn btn-info" NAME="botonEnviar" VALUE="Enviar">
+<INPUT TYPE=RESET  class="btn btn-info" NAME="botonLimpiar" VALUE="Limpiar">
+</FORM>
+</div>
+</BODY>
+</HTML>
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="es">
+<head><title>Ejemplo20-Matriz</title>
+<meta charset="UTF-8"> <!--<meta charset="iso-8859-1"> -->
+<meta name="viewport" content="width=device-width; initial-scale=1.0">
+<link rel="stylesheet" href="bootstrap-4.1.0-dist/css/bootstrap.min.css" >
+<script src="bootstrap-4.1.0-dist/js/bootstrap.min.js"></script>
+<style>
+body{
+	text-align:center;
+	background-color:#000000;
+}
+.borde{
+	border-style:solid;
+	border-color:#FF0000;
+}
+</style>
+</head>
+<body>
+<h2>Matriz cuadrada con JavaScript</h2>
+<script>
+	var m=new Array(6);
+	for (i = 0; i < 6; i++){
+		m[i]=new Array(6);
+	}
+	
+	/*var m= new Array(new Array(),new Array(),new Array(),
+  	new Array(),new Array(),new Array());*/ 
+	var n;
+	do{
+		n=parseInt(prompt("Dimension de la matriz (n<=6): "));
+	}while(n>6);
+
+	//carga la matriz m
+	for (i=0;i<n;i++){ 
+		for (j=0;j<n;j++){ 
+   			m[i][j]=prompt("Dato: ");  
+		}
+	} 
+
+//muestra la matriz m
+	for (i=0;i<n;i++){ 
+		for (j=0;j<n;j++){ 
+    		document.write("<button type='button' class='btn btn-primary borde'>"+m[i][j]+"</button>");   
+		}
+		document.write("<br>");
+	} 
+</script>
+</body>
+</html>
+
+
+
+
+
+
+
+

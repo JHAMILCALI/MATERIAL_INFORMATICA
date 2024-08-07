@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8"> <!--<meta charset="iso-8859-1"> -->
+<meta name="viewport" content="width=device-width; initial-scale=1.0">
+<head><title>Ejemplo22-JavaScript</title>
+<link rel="stylesheet" href="bootstrap-4.1.0-dist/css/bootstrap.min.css" >
+<script src="bootstrap-4.1.0-dist/js/bootstrap.min.js"></script>
+<script>
+function potencia(){
+	var x=parseInt(prompt("base: "));
+	var y=parseFloat(prompt("Elevado a: "));
+	document.write("<button type='button' class='btn btn-primary'>"+Math.pow(x,y)+"</button>");
+}
+function maximo(){
+	var x=parseInt(prompt("valor para x: "));
+	var y=parseInt(prompt("valor para y: "));
+	document.write("<button type='button' class='btn btn-danger'>"+Math.max(x,y)+"</button>");
+}
+function minimo(){
+	var x=parseInt(prompt("valor para x: "));
+	var y=parseInt(prompt("valor para y: "));
+	document.write("<button type='button' class='btn btn-warning'>"+Math.min(x,y)+"</button>");
+}
+function aleatorio(){
+	document.write("<button type='button' class='btn btn-info'>"+Math.random()+"</button>");
+}
+function raiz(){
+	var x=parseFloat(prompt("raiz cuadrada de: "));
+	document.write("<button type='button' class='btn btn-danger'>"+Math.sqrt(x)+"</button>");
+}
+</script>
+</head>
+<body>
+<script>
+	funcion=prompt("Operacion a realizar (potencia, maximo, minimo, random, raiz): ");
+	switch (funcion){
+		case "potencia":potencia();break;
+		case "maximo":maximo();break
+		case "minimo":minimo();break;
+		case "random":aleatorio();break;
+		case "raiz":raiz();break;
+	}
+</script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+

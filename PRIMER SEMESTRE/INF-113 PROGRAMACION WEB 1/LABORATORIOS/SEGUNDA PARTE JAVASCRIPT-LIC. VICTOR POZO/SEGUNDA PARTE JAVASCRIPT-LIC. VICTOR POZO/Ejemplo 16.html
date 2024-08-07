@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8"> <!--<meta charset="iso-8859-1"> -->
+<head><title>Ejemplo16-Parametros</title>
+<style>
+p{
+font-family:verdana;
+font-size:30px;
+background-color:#000000;
+color:#FFFFFF;
+text-align:center;
+text-shadow:2px 1px 3px white;
+}
+#uno:hover{
+	transform:skew(45deg);
+	}
+</style>
+
+<script>
+function escribirBienvenida(nombre){ 
+    document.write("<p id='uno'>Nombre: " + nombre + "</p>"); 
+} 
+</script>
+</head>
+<body>
+<script> 
+	var miNombre = prompt("NOMBRE COMPLETO","Ninguno");
+	escribirBienvenida(miNombre);
+</script>
+</body>
+</html>
+
+
+
+
+
+
+
+

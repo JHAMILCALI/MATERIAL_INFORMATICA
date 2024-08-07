@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8"> <!--<meta charset="iso-8859-1"> -->
+<title>Ejemplo 13</title>
+<style>
+body{
+	background-image:url(fondo22.gif);
+}
+#menu_principal{
+height: 250px; 
+width: 200px; 
+visibility:visible;
+font-family:"Verdana";
+font-size:12px;
+background-color:#000000;
+border: 3px solid #09F;	
+}
+
+a:link{
+	color:#FFFFFF;	
+}
+
+
+p{	
+color:#0FF;
+}
+
+p::first-letter{
+  	color: white;
+  	font-size:14px;
+}
+
+p.carr::before { 	/*anterior, antes*/
+  	content: "Carrera de ";
+  	font-weight: bold;
+ 	 color:#F00;  
+}
+
+p.nat::after {		/*posterior después*/
+  	content: "NATURALES";
+ 	 color:#FFF;
+}
+
+li:nth-child(2) { 	/*Selecciona el elemento 2*/
+  	font-weight:bold;  	
+  	font-size:18px;
+}
+
+ul{
+	padding-left:8px;
+} 
+li:nth-child(odd) {  /*impares*/
+   	border-bottom-style:solid;
+	border-bottom-color:#F00;	
+	text-shadow:10px 8px 1px #0FF;
+	font-style:italic;			
+}
+
+
+li:nth-child(even) { /*pares*/
+   	 border-bottom-style:solid;
+	border-bottom-color:#00F;
+}
+
+:not(p) {	/* Selecciona cualquier elemento que NO sea un párrafo (p) */
+   	text-decoration:none;
+}
+
+[href^="http://pres"] {
+ 	 border-style:solid;
+  	border-width:thin;
+  	border-color:#FFF; 
+}
+
+[href$="php"] {
+	border-width:solid;
+  	border-style:double;
+  	border-color:#F00;
+  	
+}
+</style>
+
+<body>
+<div id="menu_principal">
+<p class="nat">Fac. De Cs. Puras y </p>
+<p class="carr">INFORMATICA</p>
+<ul type="none">	
+	<li><a href="http://pres.html">Presentacion</a></li>
+	<li><a href="http://">Incio</a></li>
+	<li><a href="http://">Docentes</a></li>  
+	<li><a href="http://">Laboratorios</a></li>
+	<li><a href="http://">Aulas</a></li>
+	<li><a href="http://">Noticias</a></li>	
+	<li><a href="http://">Investigacion</a></li>
+	<li><a href="http://librospdf.php">Libros PDF</a></li>	
+</ul>
+</div>
+</body>
+</html>
+
